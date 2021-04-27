@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+<g fill="none" fill-rule="evenodd">
+<path d="M0 0h30v30H0z" fill="#CEE3E7"/>
+<path d="M3 30c.192-6.661 5.491-12 12-12s11.808 5.339 12 12" stroke="#5CA2B2" stroke-width="2"/>
+<circle cx="15" cy="12.75" r="5.25" stroke="#5CA2B2" stroke-width="2"/>
+</g>
+</svg>
