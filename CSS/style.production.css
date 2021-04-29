@@ -132,6 +132,10 @@ button:active, .button:active {
     border-radius: 58%
 }
 
+.source {
+    font-size: 10px;
+}
+
 .page-footer {
     
     clear: both;
