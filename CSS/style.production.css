@@ -5,7 +5,6 @@
 * Browsers: last 4 version
 */
 
-
 *{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -274,6 +273,17 @@ This will be replaced by js later
     }
 }
 
+.winter-scene {
+    max-width: 700px;
+    margin: 20 auto;
+}
+
+#svg10 {
+    width: auto;
+    height: auto;
+    max-width: inherit;
+    
+}
 
 @media all and (max-width: 500px ) {
     .work-grid{
@@ -301,8 +311,11 @@ This will be replaced by js later
     0% {
         fill: #ff6414;
     }
+    30% {
+        fill: #edc665;
+    }
     
-    50% {
+    70% {
         fill: #edc665;
     }
     
@@ -320,8 +333,11 @@ This will be replaced by js later
     0% {
         fill: #ff6414;
     }
+    30% {
+        fill: #edc665;
+    }
     
-    50% {
+    70% {
         fill: #edc665;
     }
     
@@ -334,15 +350,15 @@ This will be replaced by js later
 
 @-webkit-keyframes sun-rise-set {
     0% {
-        -webkit-transform-origin: 400px 550px;
-                transform-origin: 400px 550px;
-        -webkit-transform: rotate(-100deg);
-                transform: rotate(-100deg);
+        -webkit-transform-origin: 500px 450px;
+                transform-origin: 500px 450px;
+        -webkit-transform: rotate(-120deg);
+                transform: rotate(-120deg);
     }
     
     100% {
-        -webkit-transform-origin: 400px 550px;
-                transform-origin: 400px 550px;
+        -webkit-transform-origin: 800px 550px;
+                transform-origin: 800px 550px;
         -webkit-transform: rotate(100deg);
                 transform: rotate(100deg);
     }
@@ -350,79 +366,23 @@ This will be replaced by js later
 
 @keyframes sun-rise-set {
     0% {
-        -webkit-transform-origin: 400px 550px;
-                transform-origin: 400px 550px;
-        -webkit-transform: rotate(-100deg);
-                transform: rotate(-100deg);
+        -webkit-transform-origin: 500px 450px;
+                transform-origin: 500px 450px;
+        -webkit-transform: rotate(-120deg);
+                transform: rotate(-120deg);
     }
     
     100% {
-        -webkit-transform-origin: 400px 550px;
-                transform-origin: 400px 550px;
+        -webkit-transform-origin: 800px 550px;
+                transform-origin: 800px 550px;
         -webkit-transform: rotate(100deg);
                 transform: rotate(100deg);
     }
 }
 
-@-webkit-keyframes cloud-move{
-    0% {
-        -webkit-transform: translate(0px , 50px);
-                transform: translate(0px , 50px);
-    }
-    100% {
-        -webkit-transform: translate(200px, 50px);
-                transform: translate(200px, 50px);
-    }
-}
-
-@keyframes cloud-move{
-    0% {
-        -webkit-transform: translate(0px , 50px);
-                transform: translate(0px , 50px);
-    }
-    100% {
-        -webkit-transform: translate(200px, 50px);
-                transform: translate(200px, 50px);
-    }
-}
-
-@-webkit-keyframes cloud-move-reverse {
-    0% {
-        -webkit-transform: translate(446px, 48px);
-                transform: translate(446px, 48px);
-        
-    }
-    100% {
-        -webkit-transform: translate(100px, 48px);
-                transform: translate(100px, 48px);
-    }
-}
-
-@keyframes cloud-move-reverse {
-    0% {
-        -webkit-transform: translate(446px, 48px);
-                transform: translate(446px, 48px);
-        
-    }
-    100% {
-        -webkit-transform: translate(100px, 48px);
-                transform: translate(100px, 48px);
-    }
-}
-
 .sun{
-    -webkit-animation: 10s color-change infinite alternate linear, 10s sun-rise-set infinite normal linear;
-            animation: 10s color-change infinite alternate linear, 10s sun-rise-set infinite normal linear;
-}
-
-.cloud-front {
-    -webkit-animation: 30s cloud-move infinite alternate linear;
-            animation: 30s cloud-move infinite alternate linear;
-}
-
-.cloud-back{
-    -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-            animation: 34s cloud-move-reverse infinite alternate linear;
+    -webkit-animation: 20s color-change infinite alternate linear, 20s sun-rise-set infinite normal linear;
+            animation: 20s color-change infinite alternate linear, 20s sun-rise-set infinite normal linear;
 }
 
 

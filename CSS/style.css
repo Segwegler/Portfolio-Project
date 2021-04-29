@@ -9,6 +9,7 @@
     --h1-font-size: 30px;
     --h2-font-size: 24px;
     --h3-font-size: 18px;
+    --small-font-size: 10px;
     
     --link-color: #357b70;
     --link-color-visited: #5500ff;
@@ -109,6 +110,10 @@ button:active, .button:active {
     width: 250px;
     margin-right: 40px;
     border-radius: 58%
+}
+
+.source {
+    font-size: var(--small-font-size);
 }
 
 .page-footer {
@@ -229,6 +234,17 @@ This will be replaced by js later
     }
 }
 
+.winter-scene {
+    max-width: 700px;
+    margin: 20 auto;
+}
+
+#svg10 {
+    width: auto;
+    height: auto;
+    max-width: inherit;
+    
+}
 
 @media all and (max-width: 500px ) {
     .work-grid{
@@ -253,8 +269,11 @@ This will be replaced by js later
     0% {
         fill: #ff6414;
     }
+    30% {
+        fill: #edc665;
+    }
     
-    50% {
+    70% {
         fill: #edc665;
     }
     
@@ -267,45 +286,18 @@ This will be replaced by js later
 
 @keyframes sun-rise-set {
     0% {
-        transform-origin: 400px 550px;
-        transform: rotate(-100deg);
+        transform-origin: 500px 450px;
+        transform: rotate(-120deg);
     }
     
     100% {
-        transform-origin: 400px 550px;
+        transform-origin: 800px 550px;
         transform: rotate(100deg);
     }
 }
 
-@keyframes cloud-move{
-    0% {
-        transform: translate(0px , 50px);
-    }
-    100% {
-        transform: translate(200px, 50px);
-    }
-}
-
-@keyframes cloud-move-reverse {
-    0% {
-        transform: translate(446px, 48px);
-        
-    }
-    100% {
-        transform: translate(100px, 48px);
-    }
-}
-
 .sun{
-    animation: 10s color-change infinite alternate linear, 10s sun-rise-set infinite normal linear;
-}
-
-.cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
-}
-
-.cloud-back{
-    animation: 34s cloud-move-reverse infinite alternate linear;
+    animation: 20s color-change infinite alternate linear, 20s sun-rise-set infinite normal linear;
 }
 
 
