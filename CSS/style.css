@@ -93,7 +93,7 @@ button:hover, .button:hover, button:focus, .button:focus {
 }
 
 button:active, .button:active {
-    
+
 }
 
 .button_secondary {
@@ -260,10 +260,23 @@ This will be replaced by js later
 }
 
 
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (max-width: 840px) {
     .work-grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    .page-header{
+      flex-direction: column;
+      align-items: center;
+    }
+
+   .page-header__item {
+      flex: none;
+   }
+   .page-header__item:last-child {
+      flex-grow: unset;
+      text-align: center;
+   }
 }
 
 
