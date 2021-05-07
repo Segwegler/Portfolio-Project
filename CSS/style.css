@@ -100,13 +100,9 @@ button:active, .button:active {
     background-color: var(--button-bg-color-secondary);
 }
 
-.navigation-list__item--active{
-    text-decoration: none;
-}
 
 .profile {
-    max-width: 700px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 .profile__portrait{
@@ -132,8 +128,9 @@ button:active, .button:active {
 .page-header {
     display: flex;
     width: 100%;
-    padding: 20px;
-    border-bottom: green 2px solid;
+    padding: 20px 50px 0px;
+    border-bottom: var(--accent-color) 2px solid;
+    flex-direction: row;
 }
 
 .page-header__item{
@@ -150,8 +147,10 @@ button:active, .button:active {
 .navigation-list li{
     display: inline-block;
     margin-left: 15px;
-    padding: 10 10;
-    border-radius: 10px;
+}
+
+.navigation-list__item--active{
+    text-decoration: none;
 }
 
 .centered {
@@ -193,12 +192,6 @@ This will be replaced by js later
 .contact-grid__item {
     grid-row: 2 / 3;
 }
-
-.contact-grid__item:first-child {
-    grid-column: 1;
-    grid-row: 1 ;
-   
-}
 /*
 .about-grid {
     display: grid;
@@ -239,8 +232,8 @@ This will be replaced by js later
 }
 
 .winter-scene {
-    max-width: 700px;
-    margin: 20 auto;
+    max-width: 90%;
+    margin: 20px auto;
 }
 
 #svg10 {
